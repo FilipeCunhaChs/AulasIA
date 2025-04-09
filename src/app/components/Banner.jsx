@@ -1,19 +1,22 @@
 "use client"
 
 import React from "react"
-import { Competencia } from "./Competencia"
 import { Bio } from "./Bio"
 
 export function Banner() {
     return (
-        <section className="min-w-auto min-h-auto bg-[url('/bg1.jpg')] w-auto bg-cover bg-center h-screen">
-            <div className=" flex justify-around ml-44">
-                <div className="card flex justify-center mt-52">
-                    <img className="rounded-2xl -mt-50" src="/fotom.png" alt="foto" width='auto' />
+        <section className="relative w-full h-screen bg-black -z-1 flex items-end">
+            <div className="w-full flex justify-around items-end px-4 md:px-16 pb-10 relative">
+                <div className="relative w-[220px] xl:w-[800px] -mb-10">
+                    <div className="absolute inset-0 z-0 scale-105 purpleG" />
+                    <img
+                        className="relative w-full z-10 h-200 object-contain"
+                        src="/fotom.png"
+                        alt="foto"
+                    />
                 </div>
                 <Bio />
-                <div>
-                    <div className="loop cubes">
+                    <div className="loop cubes z-10">
                         <div className="item cubes" />
                         <div className="item cubes" />
                         <div className="item cubes" />
@@ -29,7 +32,6 @@ export function Banner() {
                         <div className="item cubes-2" />
                         <div className="item cubes-2" />
                     </div>
-                </div>
             </div>
         </section>
     )

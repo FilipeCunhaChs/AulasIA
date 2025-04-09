@@ -4,8 +4,10 @@ import React from "react"
 
 export function Competencia() {
     return (
-        <section className="w-full h-auto bg-[url('/bg2.jpg')] bg-cover bg-center py-10">
-            <h1 className="font-bold text-3xl text-black text-center mb-8">Minhas competências</h1>
+        <section className="w-full h-auto bg-[url('/bg2.jpg')] bg-cover bg-center pb-10">
+            <div className="w-full colorP">
+                <h1 className="font-bold text-3xl py-2 text-white text-center mb-8">Minhas competências</h1>
+            </div>
             <div className="flex flex-wrap gap-6 justify-center px-4">
                 {cards.map((card, index) => (
                     <div key={index} className="card3 w-[140px] sm:w-[160px] md:w-[180px]">
