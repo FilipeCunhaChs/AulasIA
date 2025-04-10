@@ -19,6 +19,82 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ==================== */
+
+.project {
+  display: flex;
+}
+
+.boxJect {
+  width: 55px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #fff;
+  transition: all 0.8s;
+  cursor: pointer;
+  position: relative;
+  background: rgb(107, 33, 168);
+  overflow: hidden;
+}
+
+.boxJect::before {
+  content: "E";
+  position: absolute;
+  top: 0;
+  background: #da69ff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform 0.4s;
+}
+
+.boxJect:nth-child(2)::before {
+  transform: translateY(-100%);
+  content: 'M';
+}
+
+.boxJect:nth-child(3)::before {
+  content: '-';
+}
+
+.boxJect:nth-child(4)::before {
+  transform: translateY(-100%);
+  content: 'R';
+}
+
+.boxJect:nth-child(5)::before {
+  content: 'E';
+}
+
+.boxJect:nth-child(6)::before {
+  transform: translateY(-100%);
+  content: 'A';
+}
+
+.boxJect:nth-child(7)::before {
+  content: 'C';
+}
+
+.boxJect:nth-child(8)::before {
+  transform: translateY(-100%);
+  content: 'T';
+}
+
+/* Agora, ao passar o mouse sobre o contêiner (.project), todos os .boxJect terão a animação aplicada */
+.project:hover .boxJect::before {
+  transform: translateY(0);
+}
+
+
+/* ==================== */
+
 .colorP {
   background-color: #da69ff;
 }

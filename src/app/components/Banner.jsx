@@ -16,6 +16,7 @@ export function Banner() {
                     />
                 </div>
                 <Bio />
+                
                     <div className="loop cubes z-10">
                         <div className="item cubes" />
                         <div className="item cubes" />
